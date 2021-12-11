@@ -16,7 +16,11 @@ class Print extends Thread {
     public void run() {
         while(true) {
             System.out.println("hello world");
-            Thread.sleep(1000);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
