@@ -3,6 +3,8 @@ package com.yu.java;
 import jdk.internal.org.objectweb.asm.ClassWriter;
 import jdk.internal.org.objectweb.asm.Opcodes;
 
+import java.awt.*;
+
 /**
  * @Author:Yuzhiqiang
  * @Description:
@@ -20,6 +22,7 @@ public class OMTest extends ClassLoader{
                 byte[] bytes = classWriter.toByteArray();
                 oomTest.defineClass("Class" + i, bytes, 0, bytes.length);
                 j++;
+                Point point = new Point();
             }
         }finally {
             System.out.println(j);
