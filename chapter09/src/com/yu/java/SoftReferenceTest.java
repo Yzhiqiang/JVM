@@ -35,6 +35,10 @@ public class SoftReferenceTest {
         } finally {
             System.out.println(softReference.get());
         }
-
+        try {
+            Thread.sleep(1000000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
