@@ -1,5 +1,7 @@
 package com.yu.java;
 
+import java.util.ArrayList;
+
 /**
  * @Author:Yuzhiqiang
  * @Description:
@@ -7,4 +9,11 @@ package com.yu.java;
  * @Modified By:
  */
 public class test {
+    public static void main(String[] args) {
+        ArrayList<byte[]> list = new ArrayList<>();
+        for (int i = 0; i < 500; i++) {
+            byte[] arr = new byte[1024 * 100];
+            list.add(arr);
+        }
+    }
 }
