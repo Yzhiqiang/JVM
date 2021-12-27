@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class test {
     public static void main(String[] args) {
         ArrayList<byte[]> list = new ArrayList<>();
-        for (int i = 0; i < 500; i++) {
-            byte[] arr = new byte[1024 * 100];
+        for (int i = 0; i < 1024; i++) {
+            byte[] arr = new byte[1024 * 10];
             list.add(arr);
         }
     }
