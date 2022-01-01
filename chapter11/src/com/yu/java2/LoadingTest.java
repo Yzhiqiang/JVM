@@ -13,6 +13,9 @@ public class LoadingTest {
     public static void main(String[] args) {
         try {
             Class clazz = Class.forName("java.lang.String");
+            System.out.println(clazz.getClassLoader());
+            Class clazz1 = Class.forName("java.lang.String");
+            System.out.println(clazz == clazz1);
             Method[] ms = clazz.getDeclaredMethods();   //获取该类的所有方法
             for (Method m : ms) {
                 String mod = Modifier.toString(m.getModifiers());   //获取方法的修饰符
