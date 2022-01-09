@@ -13,10 +13,10 @@ public class ScannerTest {
     public static void main(String[] args) {
         ArrayList<byte[]> list = new ArrayList<>();
         for (int i = 0; i < 1000; i++) {
-            byte[] arr = new byte[1024 * 100]; //100k
+            byte[] arr = new byte[1 * 1]; //100k
             list.add(arr);
             try {
-                Thread.sleep(10);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
