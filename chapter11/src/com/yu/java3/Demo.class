@@ -1,0 +1,13 @@
+package com.yu.java3;
+
+/**
+ * @Author:Yuzhiqiang
+ * @Description:
+ * @Date: Create in 20:20 2022/1/2
+ * @Modified By:
+ */
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println("类的加载器加载");
+    }
+}
